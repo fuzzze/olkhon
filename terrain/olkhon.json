@@ -1,0 +1,18 @@
+{
+  "source": "Copernicus GLO-30 DEM (ESA, (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018)",
+  "bbox": {
+    "west": 106.8,
+    "east": 107.86,
+    "south": 52.95,
+    "north": 53.45
+  },
+  "cols": 512,
+  "rows": 400,
+  "widthMeters": 70684.3,
+  "heightMeters": 55287.0,
+  "cellMeters": 138.06,
+  "lakeLevel": 455.0,
+  "minHeight": 455.0,
+  "maxHeight": 1737.0355224609375,
+  "layout": "row-major, row 0 = north, col 0 = west, Float32 LE, meters ASL"
+}

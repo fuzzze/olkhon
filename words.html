@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ольхон — три слова на карте</title>
+  <script type="module" crossorigin src="./assets/words-CnLWhcP_.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/places-BP_UveoE.js">
+  <link rel="stylesheet" crossorigin href="./assets/words-5mVpcSdJ.css">
+</head>
+<body>
+  <iframe id="gmap" title="Google Карты" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+
+  <div id="panel">
+    <form id="search" autocomplete="off">
+      <input id="q" type="text" spellcheck="false" placeholder="три слова или место, например мыс Хобой" aria-label="Три слова, название места или координаты" />
+      <button type="submit" title="Показать">Найти</button>
+    </form>
+    <div id="result"></div>
+    <div id="tools">
+      <div id="layers" role="group" aria-label="Слой карты">
+        <button data-t="m" class="on">Карта</button>
+        <button data-t="k">Спутник</button>
+        <button data-t="p">Высоты</button>
+      </div>
+      <button id="me" title="Мои координаты (GPS) → три слова">Где я?</button>
+    </div>
+  </div>
+
+  <a id="back" href="./" title="Вернуться в игру">← В игру</a>
+
+</body>
+</html>
