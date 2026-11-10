@@ -1,21 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Фавиконка «Внутреннего Ольхона»: персонаж в профиль (смотрит вправо), по грудь, в жёлтом круге -->
-  <defs>
-    <clipPath id="c"><circle cx="32" cy="32" r="32"/></clipPath>
-  </defs>
-  <circle cx="32" cy="32" r="32" fill="#f2b10c"/>
-  <g clip-path="url(#c)">
-    <!-- рюкзак за спиной — тёмно-жёлтый, выступает назад -->
-    <path d="M4 44 Q4 37 11 37 L21 37 L21 66 L4 66 Z" fill="#b98200"/>
-    <!-- тело в профиль: прямая спина слева, грудь выпуклостью вперёд -->
-    <path d="M17 66 L17 47 Q17 40 25 38 L37 38 Q47 39 50 48 Q52 56 51 66 Z" fill="#111"/>
-    <!-- лямка рюкзака через плечо -->
-    <path d="M19 41 Q27 37 33 41 L33 45 Q27 41.5 20 45 Z" fill="#b98200"/>
-    <!-- купол шлема — чуть впереди корпуса -->
-    <circle cx="34" cy="23" r="14.5" fill="#fff"/>
-    <!-- тень на затылке и снизу -->
-    <path d="M20.6 27.5 A14.5 14.5 0 0 0 44 33.4 A16 16 0 0 1 20.6 27.5 Z" fill="#d6d6d6"/>
-    <!-- воротник шлема, наклонён вперёд -->
-    <path d="M22 35.5 Q34 41 46 34 L47.5 37 Q34 45 21 38.5 Z" fill="#111"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>favicon</title>
+    <defs>
+        <path d="M0,0 L512,0 L512,512 L0,512 Z" id="path-1"></path>
+        <rect id="path-2" x="277" y="196" width="512" height="512" rx="256"></rect>
+    </defs>
+    <g id="favicon" stroke="none" fill="none" xlink:href="#path-1" fill-rule="evenodd">
+        <use fill="#FFFFFF" xlink:href="#path-1"></use>
+        <g id="Bitmap" stroke-width="1" transform="translate(-277, -196)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="#000000" xlink:href="#path-2"></use>
+            <g id="Group" mask="url(#mask-3)">
+                <g transform="translate(251, 184)">
+                    <polygon id="Rectangle" fill="#007898" points="0 364 278 304 565 364 565 545 0 545"></polygon>
+                    <polygon id="Rectangle" fill="#30A13B" points="0 364 278 304 565 364 565 300 276 290 0 300"></polygon>
+                    <polygon id="Rectangle" fill="#A6CC18" points="0 264 278 284 565 264 565 300 276 290 0 300"></polygon>
+                    <polygon id="Rectangle" fill="#4EC6E3" points="0 264 278 284 565 264 565 -9.45910017e-14 0 -9.45910017e-14"></polygon>
+                    <polygon id="Rectangle" fill="#D1D4D3" points="18 247 290 300 557 237 549 268 290 300 10 272"></polygon>
+                    <polygon id="Rectangle-2" fill="#FFFFFF" points="-77 59 -90 30 145 200 -77 112"></polygon>
+                    <polygon id="Rectangle-2" fill="#FFFFFF" transform="translate(516, 93.4468) scale(-1, 1) translate(-516, -93.4468)" points="430.621277 47.693617 420 24 612 162.893617 430.621277 90.9957447"></polygon>
+                </g>
+            </g>
+            <g id="Group" mask="url(#mask-3)">
+                <g transform="translate(312, 364)">
+                    <path d="M0,250.043478 C0,217.173913 16.4347826,200.73913 49.3043478,200.73913 L141,208 L119.73913,405 L0,405 L0,250.043478 Z" id="Path" fill="#F2B10C"></path>
+                    <path d="M91.5652174,405 L91.5652174,271.173913 C91.5652174,238.304348 110.347826,217.173913 147.913043,207.782609 L232.434783,207.782609 C279.391304,212.478261 309.913043,235.956522 324,278.217391 C333.391304,315.782609 335.73913,358.043478 331.043478,405 L91.5652174,405 Z" id="Path" fill="#111111"></path>
+                    <path d="M105.652174,228.913043 C106,223 222,192 256,338 C274.782609,350.521739 263.449275,353.188406 222,346 C233,288 116,198 91,266 C77.6666667,241.333333 82.5507246,228.971014 105.652174,228.913043 Z" id="Path" fill="#F2B10C"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="222.304348" cy="70.1304348" r="131"></circle>
+                    <path d="M101.242279,110.785607 C115.886341,152.074156 150.199948,183.309744 192.679082,194.020295 C235.158217,204.730847 280.179549,193.498511 312.649175,164.089055 C278.322132,187.945638 235.348212,195.773566 194.813904,185.553377 C154.279595,175.333188 120.154503,148.065765 101.242279,110.785607 Z" id="Path" fill="#4EC6E3"></path>
+                    <path d="M98.7826087,185.173913 C155.130435,211 211.478261,207.478261 267.826087,174.608696 L278.391304,195.73913 C215,233.304348 152.782609,236.826087 91.7391304,206.304348 L98.7826087,185.173913 Z" id="Path" fill="#111111" transform="translate(185.0652, 200.7181) rotate(20) translate(-185.0652, -200.7181)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

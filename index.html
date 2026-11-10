@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Внутренний Ольхон</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <script type="module" crossorigin src="./assets/main-BBqJUcuA.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/places-BP_UveoE.js">
-    <link rel="stylesheet" crossorigin href="./assets/main-DFvON_TD.css">
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <meta name="theme-color" content="#1d2a33" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ольхон" />
+    <script type="module" crossorigin src="./assets/main-BceRlnY8.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/places-BK0aS10V.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-ckWJFl75.css">
   </head>
   <body>
     <div id="app"></div>
@@ -29,13 +35,13 @@
       </div>
     </div>
     <div id="buttons">
-      <button id="btn-keys" class="round" title="Управление (F1)">
+      <button id="btn-keys" class="round" data-tip="Управление">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><rect x="8.6" y="4.2" width="6.8" height="6.8" rx="1.6"/><rect x="1.4" y="12.6" width="6.8" height="6.8" rx="1.6"/><rect x="8.6" y="12.6" width="6.8" height="6.8" rx="1.6"/><rect x="15.8" y="12.6" width="6.8" height="6.8" rx="1.6"/></svg>
       </button>
-      <button id="btn-full" class="round" title="Полноэкранный режим (F)">
+      <button id="btn-full" class="round" data-tip="Полный экран">
         <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 4h6v2H6v4H4V4zm10 0h6v6h-2V6h-4V4zM4 14h2v4h4v2H4v-6zm14 0h2v6h-6v-2h4v-4z"/></svg>
       </button>
-      <button id="btn-sound" class="round" title="Выключить звук (L)">
+      <button id="btn-sound" class="round" data-tip="Звук">
         <svg class="on" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06A9 9 0 0 0 14 3.23z"/></svg>
         <svg class="off" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zM19 12c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.8 8.8 0 0 0 21 12a9 9 0 0 0-7-8.77v2.06A7 7 0 0 1 19 12zM4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a9 9 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/></svg>
       </button>
@@ -50,6 +56,7 @@
 
     <div id="map">
       <button class="map-close" aria-label="Закрыть карту">×</button>
+      <button class="map-photos on" aria-pressed="true">Снимки</button>
       <form id="map-words" autocomplete="off">
         <input type="text" spellcheck="false" placeholder="три слова или название" aria-label="Три слова или название места" />
         <button type="submit" aria-label="Найти">→</button>
@@ -61,17 +68,17 @@
 
     <div id="help">
       <div class="head">
-        <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-9 3h2v2h-2V8zm0 3h2v2h-2v-2zM8 8h2v2H8V8zm0 3h2v2H8v-2zm-1 2H5v-2h2v2zm0-3H5V8h2v2zm9 7H8v-2h8v2zm0-4h-2v-2h2v2zm0-3h-2V8h2v2zm3 3h-2v-2h2v2zm0-3h-2V8h2v2z"/></svg>
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><rect x="8.6" y="4.2" width="6.8" height="6.8" rx="1.6"/><rect x="1.4" y="12.6" width="6.8" height="6.8" rx="1.6"/><rect x="8.6" y="12.6" width="6.8" height="6.8" rx="1.6"/><rect x="15.8" y="12.6" width="6.8" height="6.8" rx="1.6"/></svg>
         <b>Управление</b>
         <button class="close" aria-label="Закрыть">×</button>
       </div>
       <div class="body">
+      <div class="col">
       <div class="sec">Движение</div>
         <div class="row"><span>Ехать, плыть, идти</span><span class="keys"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></div>
         <div class="row"><span>или стрелками</span><span class="keys"><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></span></div>
         <div class="row"><span>Быстрее</span><span class="keys"><kbd>Shift</kbd></span></div>
         <div class="row"><span>Фары</span><span class="keys"><kbd>O</kbd></span></div>
-        <div class="row"><span>Луна-многогранник</span><span class="keys"><kbd>V</kbd></span></div>
         <div class="row"><span>Тормоз</span><span class="keys"><kbd>Пробел</kbd></span></div>
         <div class="row"><span>Поставить на колёса</span><span class="keys"><kbd>R</kbd></span></div>
       <div class="sec">Транспорт</div>
@@ -81,6 +88,8 @@
         <div class="row"><span>Взлёт и набор высоты</span><span class="keys"><kbd>Z</kbd></span></div>
         <div class="row"><span>Снижение</span><span class="keys"><kbd>X</kbd></span></div>
         <div class="row"><span>Руление и крен</span><span class="keys"><kbd>A</kbd><kbd>D</kbd></span></div>
+      </div>
+      <div class="col">
       <div class="sec">Камера</div>
         <div class="row"><span>Осмотреться</span><span class="keys"><span class="move">✥</span><svg class="mouse" viewBox="0 0 16 24"><rect x="1" y="1" width="14" height="22" rx="7"/><line x1="8" y1="1" x2="8" y2="9"/></svg></span></div>
         <div class="row"><span>Приблизить</span><span class="keys"><svg class="mouse wheel" viewBox="0 0 16 24"><rect x="1" y="1" width="14" height="22" rx="7"/><rect class="w" x="6.5" y="4" width="3" height="6" rx="1.5"/></svg></span></div>
@@ -88,16 +97,20 @@
         <div class="row"><span>Фотоаппарат</span><span class="keys"><kbd>P</kbd></span></div>
         <div class="row"><span>Объектив (с поднятой камерой)</span><span class="keys"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd></span></div>
         <div class="row"><span>Фотограф: идти, выше / ниже</span><span class="keys"><kbd>↑</kbd><kbd>↓</kbd><kbd>Z</kbd><kbd>X</kbd></span></div>
+        <div class="row"><span>Сетка: обычная / трети</span><span class="keys"><kbd>9</kbd><kbd>0</kbd></span></div>
         <div class="row"><span>Снять кадр</span><span class="keys"><kbd>Enter</kbd></span></div>
         <div class="row"><span>Опустить фотоаппарат</span><span class="keys"><kbd>Esc</kbd></span></div>
       <div class="sec">Мир</div>
         <div class="row"><span>Карта острова</span><span class="keys"><kbd>M</kbd></span></div>
         <div class="row"><span>Время +1 час / −1 час</span><span class="keys"><kbd>T</kbd><kbd>Shift</kbd><kbd>T</kbd></span></div>
         <div class="row"><span>Закончить мини-игру</span><span class="keys"><kbd>N</kbd></span></div>
+        <div class="row"><span>Начать заново (удерживать 5 с)</span><span class="keys"><kbd>N</kbd></span></div>
+        <div class="row"><span>Убрать / вернуть интерфейс</span><span class="keys"><kbd>I</kbd></span></div>
         <div class="row"><span>Полный экран</span><span class="keys"><kbd>F</kbd></span></div>
         <div class="row"><span>Звук</span><span class="keys"><kbd>L</kbd></span></div>
         <div class="row"><span>Графика</span><span class="keys"><kbd>G</kbd></span></div>
         <div class="row"><span>Эта справка</span><span class="keys"><kbd>F1</kbd></span></div>
+      </div>
       </div>
     </div>
 
