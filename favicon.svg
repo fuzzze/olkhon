@@ -6,8 +6,7 @@
         <rect id="path-2" x="277" y="196" width="512" height="512" rx="256"></rect>
     </defs>
     <g id="favicon" stroke="none" fill="none" xlink:href="#path-1" fill-rule="evenodd">
-        <use fill="#FFFFFF" xlink:href="#path-1"></use>
-        <g id="Bitmap" stroke-width="1" transform="translate(-277, -196)">
+                <g id="Bitmap" stroke-width="1" transform="translate(-277, -196)">
             <mask id="mask-3" fill="white">
                 <use xlink:href="#path-2"></use>
             </mask>
