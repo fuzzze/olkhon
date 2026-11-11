@@ -3,6 +3,7 @@
   "short_name": "Ольхон",
   "description": "Байкал. Июль. Игра-путешествие по острову Ольхон.",
   "lang": "ru",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
