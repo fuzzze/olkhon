@@ -11,9 +11,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Ольхон" />
-    <script type="module" crossorigin src="./assets/main-Bu_9XW5O.js"></script>
+    <script type="module" crossorigin src="./assets/main-C0cQL5Z1.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/places-BK0aS10V.js">
-    <link rel="stylesheet" crossorigin href="./assets/main-BT4BWsU7.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-jcvf_3et.css">
   </head>
   <body>
     <div id="app"></div>
@@ -116,11 +116,47 @@
       </div>
     </div>
 
+    <!-- обложка по макету автора (design/UI.sketch: «title screen», «mobile title screen 1»);
+         фон — лёгкий SVG с размытием вместо растровой картинки -->
     <div id="loading">
-      <div class="tag">Байкал. Июль.</div>
-      <div class="logo">Внутренний Ольхон</div>
-      <div id="loading-status">Загрузка…</div>
-      <div class="start" aria-label="Начать"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <svg class="cover-bg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+      <defs>
+      <linearGradient id="cover-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#68c4da"/><stop offset=".25" stop-color="#8fd0dc"/><stop offset=".34" stop-color="#d4e0d8"/><stop offset=".45" stop-color="#d4d9c6"/>
+      </linearGradient>
+      <filter id="cover-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="26"/></filter>
+      </defs>
+      <g filter="url(#cover-blur)">
+      <rect x="-100" y="-100" width="2120" height="1280" fill="url(#cover-sky)"/>
+      <g transform="translate(0,-55)">
+      <path d="M-100,430 C120,400 300,440 420,480 C560,450 720,500 820,540 L820,1180 L-100,1180Z" fill="#5e9a16"/>
+      <path d="M1080,560 C1250,460 1500,430 1750,420 C1850,415 1950,450 2020,480 L2020,1180 L1080,1180Z" fill="#3f861a"/>
+      <path d="M-100,560 C300,540 700,580 1120,600 C1300,560 1500,560 2020,560 L2020,1180 L-100,1180Z" fill="#6a9a12"/>
+      <path d="M380,600 C700,580 1000,600 1200,640 L1180,700 C900,660 600,640 380,640Z" fill="#7aa014"/>
+      <path d="M1000,700 C1080,690 1150,700 1200,720 C1150,760 1060,760 1000,740Z" fill="#567f12"/>
+      <path d="M-100,760 C400,740 800,760 1200,790 L1000,1180 L-100,1180Z" fill="#709410"/>
+      <path d="M1420,640 C1650,620 1850,640 2020,680 L2020,1180 L940,1180 C1100,960 1260,780 1420,640Z" fill="#8a9f16"/>
+      </g></g>
+      </svg>
+      <div class="cover">
+        <div class="cover-title">
+          <img class="cover-logo" src="favicon.svg" alt="" />
+          <div class="cover-name">
+            <svg viewBox="0 0 474 87" preserveAspectRatio="none" aria-hidden="true"><polygon fill="#111" points="2,0 472,0 474,16 464,18 472.6,19.1 474,64 465,70 469,75 472,87 2,87 3,21 11,16 0,12"/></svg>
+            <h1>Внутренний Ольхон</h1>
+          </div>
+        </div>
+        <div class="cover-side">
+          <div id="loading-status">Загрузка…</div>
+          <nav class="cover-menu" aria-label="Меню">
+            <svg class="hl" viewBox="0 0 266 45" aria-hidden="true"><polygon fill="#f2b10c" points="1,5 234,5 243,0 266,0 265.2,8.5 257,11 264.7,12.9 262,40 242,40 237,45 4,45"/><polygon fill="#f2910c" points="234,5 243,0 242,40 237,45"/></svg>
+            <button data-act="play">Продолжить игру</button>
+            <button data-act="new">Начать заново</button>
+            <button data-act="settings" class="off" tabindex="-1" aria-disabled="true">Настройки</button>
+            <button data-act="help">Помощь</button>
+          </nav>
+        </div>
+      </div>
       <div id="version"></div>
     </div>
 
