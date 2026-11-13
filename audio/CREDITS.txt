@@ -10,7 +10,6 @@ AllKhon — звуки: источники и лицензии
    Airborne Sound - Bathroom  →  splash_small
    Alexander Kopeikin - Quad ambience of Crimea in summer  →  amb_crickets
    Alexander Kopeikin - Sci-Fi Metal Elements HD  →  clank_ramp
-   Audionym - The Fly  →  fly
    Bart Kamski - Dogs - game ready  →  dog_big, dog_far
    BlueZone - Heavy Metal Impact Sound Effects  →  clank_door
    Bonson - Wings  →  grasshopper
