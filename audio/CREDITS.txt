@@ -1,0 +1,90 @@
+AllKhon — звуки: источники и лицензии
+
+Записи обработаны (нарезка, зацикливание, выравнивание громкости, шумоподавление): tools/audio/build_audio.py.
+
+1. Sonniss — GDC Game Audio Bundle (https://sonniss.com/gameaudiogdc)
+   Лицензия Sonniss: бесплатное использование в играх и роликах, без обязательной подписи.
+   Сами записи как библиотеку распространять нельзя — здесь только обработанные фрагменты в составе игры.
+
+   3maze -  The Closet  →  cam_raise
+   Airborne Sound - Bathroom  →  splash_small
+   Alexander Kopeikin - Quad ambience of Crimea in summer  →  amb_crickets
+   Alexander Kopeikin - Sci-Fi Metal Elements HD  →  clank_ramp
+   Audionym - The Fly  →  fly
+   Bart Kamski - Dogs - game ready  →  dog_big, dog_far
+   BlueZone - Heavy Metal Impact Sound Effects  →  clank_door
+   Bonson - Wings  →  grasshopper
+   Borys Peter - Rural zone  →  amb_birds_dawn
+   Carlo Ascrizzi - Race Cars Essential Library  →  door
+   Discover Oregon - Ravens and Robins  →  bird_raven
+   Dizzy Duck -  Sounds From Nature  →  rooster
+   Eiravaein Works - Vaeyan IV  →  paddle
+   Fox Audio Post-Production - Countryside – Nature & Field  →  amb_meadow
+   G4F SFX - Horses  →  horse_snort, horse_whinny
+   Gamemaster Audio - Animal Sounds  →  goat
+   HERZ - Baltic quad surroundings  →  amb_wind_pines
+   Hzandbits - Wind In Trees  →  amb_wind_grass, amb_wind_gusty
+   Ivo Vicic - Bora wind - European local wind  →  amb_wind_storm
+   Ivo Vicic - Natural ambiences vol.1  →  owl
+   Ivo Vicic - Northern Mediterranean soundscapes - Adriatic sea  →  hull_lap
+   Levan Nadashvili - Civilian Footsteps  →  fs_dirt, fs_wood
+   Levan Nadashvili - Soldier Footsteps  →  fs_hard, fs_metal
+   LukasTvrdon - Boat Ride  →  boat_wash
+   Mattia Cellotto - Rocks Momentum  →  splash_big
+   PMSFX - Books Alive  →  page
+   PMSFX - STEPS Dirt & Gravel  →  fs_dirt
+   PMSFX - STEPS Dry Grass & Shrubs  →  fs_grass
+   Pole Position - Barking Dog  →  dog
+   Pole Position - GAZ-69 1965  →  uaz_idle, uaz_run, uaz_start
+   Pole Position - Molgaard F2 2006  →  boat_idle, boat_run
+   Pole Position - Tugboat Deutz VM 145  →  ferry_engine
+   Pole Position Production - Grumman F6F Hellcat  →  plane_high, plane_idle, plane_mid
+   Pole Position Production - Suzuki KingQuad 750AXI 2017  →  quad_idle, quad_run
+   RYK-Sounds - Footstep  →  fs_grass
+   RZ Post - The Bicycles SFX  →  bike_chain, bike_roll, skid
+   Red Libraries - Bodyfall  →  thud_dirt, thud_metal
+   Red Libraries - Water Rush  →  splash_dive
+   Shapeforms - Hit & Punch  →  thud_low
+   SmartSoundFX - User Interaction  →  page
+   SoundBits - Collected Animals  →  seal
+   SoundHolder -  Cameras  →  cam_wind
+   SoundHolder -  Cormorants  →  bird_cormorant
+   SoundHolder - Audi A4 B8 2.0 Diesel Library  →  tire_gravel
+   Soundholder - Old Cameras 192kHz  →  cam_shutter
+   Soundopolis - Natures Fury_Rain_01  →  amb_rain
+   Soundrangers - Foley Elements Rocks, Dirt And Stone  →  thud_rock
+   Soundrangers - Hydrology Bubbles and Splashes  →  fish_jump
+   Soundrangers - Hydrology Streams, Rivers And Lakes  →  amb_shore_calm
+   Soundrangers – Thunder  →  thunder
+   Soundreorganized - Ambisonic Forest - Summer  →  amb_birds_forest
+   Studio 23 - Ultimate Footstep Collection  →  fs_gravel
+   Systematic-Sound - Sounds Of Nature – Flowing Water 01  →  amb_shore_windy
+   The Sound Pack Tree - Sonic Seaside  →  amb_gull_colony
+   The Sound Pack Tree - The BIG Pack  →  dinghy_run
+   The Sound Pack Tree - The Nature Pack  →  cow
+   Touchdown Audio -The White Stuff  →  page
+   Tovusound - Edward – Foleyart Collection Add-On Extended Footsteps  →  fs_grassw
+   Varazuvi - Natural Environments  →  amb_rain_heavy
+   Wav Junction Sound Effects - Footsteps  →  wade
+   aXLsound - Scottish Highlands  →  amb_water_open
+
+2. iNaturalist (https://www.inaturalist.org) — голоса птиц, записи наблюдателей (CC BY 4.0 или CC0)
+
+   наблюдение 130552771 (long-tailed ground squirrel) — © Michael and Antoni Hinczewski — CC BY 4.0  →  gopher
+   наблюдение 162850258 (alauda arvensis) — © Oleksii Vasyliuk — CC BY 4.0  →  bird_skylark
+   наблюдение 177582766 (larus canus) — © Anastasiia Samokhvalova — CC BY 4.0  →  bird_gull_a
+   наблюдение 208314704 (sterna hirundo) — без ограничений (CC0)  →  bird_tern
+   наблюдение 214251860 (cuculus canorus) — без ограничений (CC0)  →  bird_cuckoo
+   наблюдение 221981670 (larus canus) — © Jonathan Henshaw — CC BY 4.0  →  bird_gull_b
+   наблюдение 326252519 (larus canus) — © Priya Sandhu — CC BY 4.0  →  bird_gull_long
+   наблюдение 405545583 (tadorna ferruginea) — без ограничений (CC0)  →  bird_shelduck
+   наблюдение 49702836 (motacilla alba) — © Светлана Панкова — CC BY 4.0  →  bird_wagtail
+   наблюдение 54274058 (milvus migrans) — © Pavel Borodin — CC BY 4.0  →  bird_kite
+   наблюдение 6040422 (corvus corax) — без ограничений (CC0)  →  bird_raven_b
+
+3. Прочее
+
+   Kenney — Interface Sounds (kenney.nl), CC0  →  ui_back, ui_click, ui_close, ui_confirm, ui_deny, ui_hover, ui_open, ui_pluck, ui_select, ui_switch, ui_toast
+   OpenGameArt — «Opening and Closing a Map Sounds», CC0  →  map_close, map_open
+
+4. freefall.mp3, canopy-pop.mp3 — предоставлены автором игры.
