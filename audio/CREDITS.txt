@@ -34,8 +34,6 @@ AllKhon — звуки: источники и лицензии
    PMSFX - STEPS Dirt & Gravel  →  fs_dirt
    PMSFX - STEPS Dry Grass & Shrubs  →  fs_grass
    Pole Position - Barking Dog  →  dog
-   Pole Position - GAZ-69 1965  →  uaz_idle, uaz_run, uaz_start
-   Pole Position - Molgaard F2 2006  →  boat_idle, boat_run
    Pole Position - Tugboat Deutz VM 145  →  ferry_engine
    Pole Position Production - Grumman F6F Hellcat  →  plane_high, plane_idle, plane_mid
    Pole Position Production - Suzuki KingQuad 750AXI 2017  →  quad_idle, quad_run
@@ -86,4 +84,5 @@ AllKhon — звуки: источники и лицензии
    Kenney — Interface Sounds (kenney.nl), CC0  →  ui_back, ui_click, ui_close, ui_confirm, ui_deny, ui_hover, ui_open, ui_pluck, ui_select, ui_switch, ui_toast
    OpenGameArt — «Opening and Closing a Map Sounds», CC0  →  map_close, map_open
 
-4. freefall.mp3, canopy-pop.mp3 — предоставлены автором игры.
+4. Предоставлены автором игры: freefall.mp3, canopy-pop.mp3; из его подборки (refs/Sounds): «легковой автомобиль» →
+   uaz_start, uaz_idle, uaz_r1…r3; «катер» → boat_idle, boat_r1…r3; «сигналка» → find_alarm.
